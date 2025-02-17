@@ -1,0 +1,23 @@
+colors: true
+pre-commit:
+  parallel: false
+  piped: true
+  scripts:
+    pre-commit.sh:
+      runner: bash
+      interactive: true
+pre-push:
+  parallel: false
+  piped: true
+  scripts:
+    pre-push.sh:
+      runner: bash
+      interactive: true
+      use_stdin: true
+commit-msg:
+  parallel: false
+  piped: true
+  scripts:
+    commit-msg.sh:
+      runner: bash
+      interactive: true
