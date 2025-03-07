@@ -67,6 +67,7 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"axios": "^1.7.9",
 		"styled-svelte5": "^0.4.1",
 		"svelte-routing": "^2.13.0"
 	}

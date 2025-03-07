@@ -57,11 +57,27 @@
 		}
 	};
 
+	const legends = {
+		legend400: {
+			fontSize: '12px',
+			fontWeight: '500',
+			lineHeight: '16px',
+			fontFamily: 'Inter'
+		},
+		legend500: {
+			fontSize: '12px',
+			fontWeight: '600',
+			lineHeight: '16px',
+			fontFamily: 'Inter'
+		}
+	};
+
 	const VariantMap = {
 		...titles,
 		...displays,
 		...labels,
-		...bodies
+		...bodies,
+		...legends
 	};
 
 	interface Props {

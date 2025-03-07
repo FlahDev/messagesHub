@@ -11,6 +11,10 @@
 	import Card from '$lib/components/card/card.svelte';
 	import UploadArea from '$lib/components/uploadArea/uploadArea.svelte';
 
+	import { useUploadGateway } from '$api/gateways';
+
+	const { upload } = useUploadGateway();
+
 	let selectedFile: File | null = $state(null);
 	let forceInvalidFile = $state<boolean>(false);
 
@@ -39,8 +43,10 @@
 	// 	goto(RoutePaths.upload, { replaceState: true });
 	// };
 
-	const handleSubmit = () => {
-		console.log(selectedFile);
+	const handleSubmit = async () => {
+		const result = await upload(selectedFile as File);
+
+		console.log(result);
 	};
 </script>
 

@@ -30,7 +30,7 @@
 	<div class="Footer">
 		<Button
 			onclick={handleClick}
-			label="Visualizar meu arquivo"
+			label="Começar"
 			rightIcon="arrow-right"
 			variant="green"
 			floating

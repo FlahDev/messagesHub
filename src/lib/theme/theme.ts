@@ -4,6 +4,7 @@ const colors = {
 	neutral0: '#000000',
 	neutral100: '#373F45',
 	neutral300: '#8E959A',
+	neutral550: '#EDEDE6',
 	neutral500: '#C6C6C5',
 	neutral600: '#BEBEBE',
 	neutral700: '#f0f0f0',
